@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <site.iway.androidhelpers.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        app:centerViewId="@+id/centerView"
+        app:leftViewId="@+id/leftView"
+        app:rightViewId="@+id/rightView">
+
+        <LinearLayout
+            android:id="@id/leftView"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:gravity="top|center"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="LEFT BUTTON" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="LEFT BUTTON" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="LEFT BUTTON" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/rightView"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:gravity="top|center"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="RIGHT BUTTON" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="RIGHT BUTTON" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="RIGHT BUTTON" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="RIGHT BUTTON" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="RIGHT BUTTON" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@id/centerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:scaleType="center"
+            android:src="@mipmap/ic_launcher" />
+
+    </site.iway.androidhelpers.DrawerLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_left"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="LEFT" />
+
+        <Button
+            android:id="@+id/btn_center"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="CENTER" />
+
+        <Button
+            android:id="@+id/btn_right"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="RIGHT" />
+
+    </LinearLayout>
+
+</RelativeLayout>
