@@ -127,4 +127,4 @@ app:centerViewId 指定主要的视图，可以被拖动
 app:leftViewId 指定左侧视图，在主视图向右滑动时展示，为空则无法滑动
 app:rightViewId 指定右侧视图，在主视图向左滑动时展示，为空则无法滑动
 ```
-##### 请确保 centerView 位于 leftView 和 rightView 上层，在 xml 文件则为下方。<br/>另外，请给 centerView 设定一个背景，以遮挡 leftView 或 rightView。
+##### 请确保 centerView 位于 leftView 和 rightView 上层，在 xml 文件则为下方。<br/>另外，请给 centerView 设定一个背景，以遮挡 leftView 或 rightView 的内容。
