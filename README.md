@@ -5,7 +5,7 @@ Android 双向抽屉布局。
 
 ![image](https://github.com/iWay7/AndroidDrawerLayout/blob/master/sample.gif)   
 
-### 本示例基于 AndroidHelper 库，访问 https://github.com/iWay7/AndroidHelpers 添加依赖。
+### 本示例基于 AndroidHelpers 库，访问 https://github.com/iWay7/AndroidHelpers 添加依赖。
 
 #### 开始使用：
 ##### 类似这样，在布局文件中声明一个 DrawerLayout 视图即可：
