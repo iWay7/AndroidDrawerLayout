@@ -5,27 +5,9 @@ Android 双向抽屉布局。
 
 ![image](https://github.com/iWay7/AndroidDrawerLayout/blob/master/sample.gif)   
 
-### 简单的集成方式
+### 本示例基于 AndroidHelper 库，访问 https://github.com/iWay7/AndroidHelpers 添加依赖。
 
-#### 第一步：在你的项目 build.gradle 添加 maven 库：
-```
-allprojects {
-    repositories {
-        ...
-        maven { url 'https://www.jitpack.io' }
-    }
-}
-```
-
-#### 第二步：在你的模块 build.gradle 添加依赖库：
-```
-dependencies {
-    ...
-    api 'com.github.iWay7:AndroidHelpers:1.0.4'
-}
-```
-
-#### 然后就可以使用啦：
+#### 开始使用：
 ##### 类似这样，在布局文件中声明一个 DrawerLayout 视图即可：
 ```
 <site.iway.androidhelpers.DrawerLayout
@@ -43,28 +25,24 @@ dependencies {
         android:layout_height="match_parent"
         android:gravity="top|center"
         android:orientation="vertical">
-
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:gravity="center"
             android:text="LEFT BUTTON" />
-
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:gravity="center"
             android:text="LEFT BUTTON" />
-
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:gravity="center"
             android:text="LEFT BUTTON" />
-
     </LinearLayout>
 
     <LinearLayout
@@ -73,51 +51,63 @@ dependencies {
         android:layout_height="match_parent"
         android:gravity="top|center"
         android:orientation="vertical">
-
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:gravity="center"
             android:text="RIGHT BUTTON" />
-
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:gravity="center"
             android:text="RIGHT BUTTON" />
-
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:gravity="center"
             android:text="RIGHT BUTTON" />
-
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:gravity="center"
             android:text="RIGHT BUTTON" />
-
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:gravity="center"
             android:text="RIGHT BUTTON" />
-
     </LinearLayout>
 
-    <ImageView
+    <LinearLayout
         android:id="@id/centerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white"
-        android:scaleType="center"
-        android:src="@mipmap/ic_launcher" />
+        android:background="@color/red"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:src="@mipmap/ic_launcher" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginTop="8dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
 
 </site.iway.androidhelpers.DrawerLayout>
 ```
